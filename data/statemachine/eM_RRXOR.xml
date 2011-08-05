@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<network>
+	<nodes>
+		<node id="0"/>
+		<node id="1"/>
+		<node id="2"/>
+		<node id="3" type="recurrent"/>
+		<node id="4" type="recurrent"/>
+		<node id="5"/>
+		<node id="6"/>
+		<node id="7"/>
+		<node id="8"/>
+		<node id="9"/>
+		<node id="10"/>
+		<node id="11"/>
+		<node id="12"/>
+		<node id="13"/>
+		<node id="14" type="recurrent"/>
+		<node id="15"/>
+		<node id="16"/>
+		<node id="17"/>
+		<node id="18"/>
+		<node id="19"/>
+		<node id="20"/>
+		<node id="21"/>
+		<node id="22"/>
+		<node id="23" type="recurrent"/>
+		<node id="24"/>
+		<node id="25"/>
+		<node id="26"/>
+		<node id="27"/>
+		<node id="28"/>
+		<node id="29"/>
+		<node id="30"/>
+		<node id="31"/>
+		<node id="32" type="start"/>
+		<node id="33"/>
+		<node id="34"/>
+		<node id="35" type="recurrent"/>
+	</nodes>
+	<edges>
+		<edge directed="true" from="0" to="27"/>
+		<edge directed="true" from="0" to="11"/>
+		<edge directed="true" from="1" to="19"/>
+		<edge directed="true" from="1" to="23"/>
+		<edge directed="true" from="2" to="14"/>
+		<edge directed="true" from="2" to="15"/>
+		<edge directed="true" from="3" to="35"/>
+		<edge directed="true" from="4" to="23"/>
+		<edge directed="true" from="4" to="3"/>
+		<edge directed="true" from="5" to="22"/>
+		<edge directed="true" from="5" to="23"/>
+		<edge directed="true" from="6" to="0"/>
+		<edge directed="true" from="6" to="1"/>
+		<edge directed="true" from="7" to="22"/>
+		<edge directed="true" from="7" to="23"/>
+		<edge directed="true" from="8" to="33"/>
+		<edge directed="true" from="8" to="34"/>
+		<edge directed="true" from="9" to="21"/>
+		<edge directed="true" from="9" to="33"/>
+		<edge directed="true" from="10" to="24"/>
+		<edge directed="true" from="10" to="25"/>
+		<edge directed="true" from="11" to="5"/>
+		<edge directed="true" from="11" to="6"/>
+		<edge directed="true" from="12" to="29"/>
+		<edge directed="true" from="12" to="30"/>
+		<edge directed="true" from="13" to="10"/>
+		<edge directed="true" from="13" to="11"/>
+		<edge directed="true" from="14" to="23"/>
+		<edge directed="true" from="14" to="3"/>
+		<edge directed="true" from="15" to="27"/>
+		<edge directed="true" from="15" to="24"/>
+		<edge directed="true" from="16" to="9"/>
+		<edge directed="true" from="16" to="14"/>
+		<edge directed="true" from="17" to="19"/>
+		<edge directed="true" from="17" to="23"/>
+		<edge directed="true" from="18" to="30"/>
+		<edge directed="true" from="18" to="7"/>
+		<edge directed="true" from="19" to="26"/>
+		<edge directed="true" from="19" to="4"/>
+		<edge directed="true" from="20" to="10"/>
+		<edge directed="true" from="20" to="24"/>
+		<edge directed="true" from="21" to="16"/>
+		<edge directed="true" from="21" to="3"/>
+		<edge directed="true" from="22" to="31"/>
+		<edge directed="true" from="22" to="4"/>
+		<edge directed="true" from="23" to="35"/>
+		<edge directed="true" from="24" to="2"/>
+		<edge directed="true" from="24" to="3"/>
+		<edge directed="true" from="25" to="20"/>
+		<edge directed="true" from="25" to="21"/>
+		<edge directed="true" from="26" to="1"/>
+		<edge directed="true" from="26" to="17"/>
+		<edge directed="true" from="27" to="2"/>
+		<edge directed="true" from="27" to="3"/>
+		<edge directed="true" from="28" to="17"/>
+		<edge directed="true" from="28" to="18"/>
+		<edge directed="true" from="29" to="7"/>
+		<edge directed="true" from="29" to="8"/>
+		<edge directed="true" from="30" to="27"/>
+		<edge directed="true" from="30" to="28"/>
+		<edge directed="true" from="31" to="5"/>
+		<edge directed="true" from="31" to="7"/>
+		<edge directed="true" from="32" to="12"/>
+		<edge directed="true" from="32" to="13"/>
+		<edge directed="true" from="33" to="3"/>
+		<edge directed="true" from="33" to="16"/>
+		<edge directed="true" from="34" to="5"/>
+		<edge directed="true" from="34" to="29"/>
+		<edge directed="true" from="35" to="14"/>
+		<edge directed="true" from="35" to="4"/>
+	</edges>
+</network>

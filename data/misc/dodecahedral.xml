@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<network>
+	<nodes>
+		<node id="0"/>
+		<node id="1"/>
+		<node id="2"/>
+		<node id="3"/>
+		<node id="4"/>
+		<node id="5"/>
+		<node id="6"/>
+		<node id="7"/>
+		<node id="8"/>
+		<node id="9"/>
+		<node id="10"/>
+		<node id="11"/>
+		<node id="12"/>
+		<node id="13"/>
+		<node id="14"/>
+		<node id="15"/>
+		<node id="16"/>
+		<node id="17"/>
+		<node id="18"/>
+		<node id="19"/>
+	</nodes>
+	<edges>
+		<edge directed="false" from="0" to="1"/>
+		<edge directed="false" from="0" to="10"/>
+		<edge directed="false" from="0" to="19"/>
+		<edge directed="false" from="1" to="8"/>
+		<edge directed="false" from="1" to="2"/>
+		<edge directed="false" from="2" to="3"/>
+		<edge directed="false" from="2" to="6"/>
+		<edge directed="false" from="3" to="19"/>
+		<edge directed="false" from="3" to="4"/>
+		<edge directed="false" from="4" to="17"/>
+		<edge directed="false" from="4" to="5"/>
+		<edge directed="false" from="5" to="6"/>
+		<edge directed="false" from="5" to="15"/>
+		<edge directed="false" from="6" to="7"/>
+		<edge directed="false" from="7" to="8"/>
+		<edge directed="false" from="7" to="14"/>
+		<edge directed="false" from="8" to="9"/>
+		<edge directed="false" from="9" to="10"/>
+		<edge directed="false" from="9" to="13"/>
+		<edge directed="false" from="10" to="11"/>
+		<edge directed="false" from="11" to="12"/>
+		<edge directed="false" from="11" to="18"/>
+		<edge directed="false" from="12" to="16"/>
+		<edge directed="false" from="12" to="13"/>
+		<edge directed="false" from="13" to="14"/>
+		<edge directed="false" from="14" to="15"/>
+		<edge directed="false" from="15" to="16"/>
+		<edge directed="false" from="16" to="17"/>
+		<edge directed="false" from="17" to="18"/>
+		<edge directed="false" from="18" to="19"/>
+	</edges>
+</network>

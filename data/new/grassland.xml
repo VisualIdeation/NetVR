@@ -1,0 +1,231 @@
+<network>
+	<nodes>
+		<node id="0"/>
+		<node id="1"/>
+		<node id="2"/>
+		<node id="3"/>
+		<node id="4"/>
+		<node id="5"/>
+		<node id="6"/>
+		<node id="7"/>
+		<node id="8"/>
+		<node id="9"/>
+		<node id="10"/>
+		<node id="11"/>
+		<node id="12"/>
+		<node id="13"/>
+		<node id="14"/>
+		<node id="15"/>
+		<node id="16"/>
+		<node id="17"/>
+		<node id="18"/>
+		<node id="19"/>
+		<node id="20"/>
+		<node id="21"/>
+		<node id="22"/>
+		<node id="23"/>
+		<node id="24"/>
+		<node id="25"/>
+		<node id="26"/>
+		<node id="27"/>
+		<node id="28"/>
+		<node id="29"/>
+		<node id="30"/>
+		<node id="31"/>
+		<node id="32"/>
+		<node id="33"/>
+		<node id="34"/>
+		<node id="35"/>
+		<node id="36"/>
+		<node id="37"/>
+		<node id="38"/>
+		<node id="39"/>
+		<node id="40"/>
+		<node id="41"/>
+		<node id="42"/>
+		<node id="43"/>
+		<node id="44"/>
+		<node id="45"/>
+		<node id="46"/>
+		<node id="47"/>
+		<node id="48"/>
+		<node id="49"/>
+		<node id="50"/>
+		<node id="51"/>
+		<node id="52"/>
+		<node id="53"/>
+		<node id="54"/>
+		<node id="55"/>
+		<node id="56"/>
+		<node id="57"/>
+		<node id="58"/>
+		<node id="59"/>
+		<node id="60"/>
+		<node id="61"/>
+		<node id="62"/>
+		<node id="63"/>
+		<node id="64"/>
+		<node id="65"/>
+		<node id="66"/>
+		<node id="67"/>
+		<node id="68"/>
+		<node id="69"/>
+		<node id="70"/>
+		<node id="71"/>
+		<node id="72"/>
+		<node id="73"/>
+		<node id="74"/>
+		<node id="75"/>
+		<node id="76"/>
+		<node id="77"/>
+		<node id="78"/>
+		<node id="79"/>
+		<node id="80"/>
+		<node id="81"/>
+		<node id="82"/>
+		<node id="83"/>
+		<node id="84"/>
+		<node id="85"/>
+		<node id="86"/>
+		<node id="87"/>
+	</nodes>
+	<edges>
+		<edge directed="true" from="0" to="78"/>
+		<edge directed="true" from="0" to="79"/>
+		<edge directed="true" from="0" to="80"/>
+		<edge directed="true" from="0" to="81"/>
+		<edge directed="true" from="0" to="82"/>
+		<edge directed="true" from="0" to="83"/>
+		<edge directed="true" from="0" to="84"/>
+		<edge directed="true" from="0" to="85"/>
+		<edge directed="true" from="0" to="86"/>
+		<edge directed="true" from="0" to="87"/>
+		<edge directed="true" from="1" to="19"/>
+		<edge directed="true" from="1" to="20"/>
+		<edge directed="true" from="1" to="21"/>
+		<edge directed="true" from="1" to="22"/>
+		<edge directed="true" from="1" to="64"/>
+		<edge directed="true" from="1" to="66"/>
+		<edge directed="true" from="2" to="23"/>
+		<edge directed="true" from="2" to="62"/>
+		<edge directed="true" from="2" to="64"/>
+		<edge directed="true" from="2" to="66"/>
+		<edge directed="true" from="3" to="24"/>
+		<edge directed="true" from="3" to="66"/>
+		<edge directed="true" from="4" to="24"/>
+		<edge directed="true" from="4" to="25"/>
+		<edge directed="true" from="4" to="26"/>
+		<edge directed="true" from="4" to="27"/>
+		<edge directed="true" from="4" to="28"/>
+		<edge directed="true" from="4" to="63"/>
+		<edge directed="true" from="4" to="66"/>
+		<edge directed="true" from="5" to="29"/>
+		<edge directed="true" from="5" to="30"/>
+		<edge directed="true" from="5" to="31"/>
+		<edge directed="true" from="5" to="32"/>
+		<edge directed="true" from="5" to="33"/>
+		<edge directed="true" from="5" to="66"/>
+		<edge directed="true" from="6" to="34"/>
+		<edge directed="true" from="6" to="35"/>
+		<edge directed="true" from="6" to="65"/>
+		<edge directed="true" from="6" to="76"/>
+		<edge directed="true" from="7" to="36"/>
+		<edge directed="true" from="7" to="37"/>
+		<edge directed="true" from="8" to="38"/>
+		<edge directed="true" from="8" to="39"/>
+		<edge directed="true" from="8" to="40"/>
+		<edge directed="true" from="8" to="41"/>
+		<edge directed="true" from="8" to="42"/>
+		<edge directed="true" from="8" to="43"/>
+		<edge directed="true" from="8" to="44"/>
+		<edge directed="true" from="8" to="64"/>
+		<edge directed="true" from="8" to="66"/>
+		<edge directed="true" from="9" to="44"/>
+		<edge directed="true" from="9" to="45"/>
+		<edge directed="true" from="9" to="46"/>
+		<edge directed="true" from="9" to="47"/>
+		<edge directed="true" from="9" to="48"/>
+		<edge directed="true" from="9" to="66"/>
+		<edge directed="true" from="9" to="67"/>
+		<edge directed="true" from="9" to="76"/>
+		<edge directed="true" from="10" to="76"/>
+		<edge directed="true" from="11" to="66"/>
+		<edge directed="true" from="11" to="76"/>
+		<edge directed="true" from="12" to="49"/>
+		<edge directed="true" from="12" to="50"/>
+		<edge directed="true" from="12" to="68"/>
+		<edge directed="true" from="12" to="69"/>
+		<edge directed="true" from="12" to="75"/>
+		<edge directed="true" from="13" to="51"/>
+		<edge directed="true" from="13" to="52"/>
+		<edge directed="true" from="13" to="53"/>
+		<edge directed="true" from="13" to="66"/>
+		<edge directed="true" from="14" to="54"/>
+		<edge directed="true" from="14" to="70"/>
+		<edge directed="true" from="14" to="76"/>
+		<edge directed="true" from="15" to="55"/>
+		<edge directed="true" from="15" to="56"/>
+		<edge directed="true" from="15" to="57"/>
+		<edge directed="true" from="15" to="71"/>
+		<edge directed="true" from="15" to="72"/>
+		<edge directed="true" from="15" to="76"/>
+		<edge directed="true" from="16" to="58"/>
+		<edge directed="true" from="17" to="59"/>
+		<edge directed="true" from="17" to="73"/>
+		<edge directed="true" from="18" to="60"/>
+		<edge directed="true" from="18" to="61"/>
+		<edge directed="true" from="18" to="74"/>
+		<edge directed="true" from="18" to="77"/>
+		<edge directed="true" from="20" to="66"/>
+		<edge directed="true" from="21" to="66"/>
+		<edge directed="true" from="23" to="62"/>
+		<edge directed="true" from="23" to="64"/>
+		<edge directed="true" from="23" to="66"/>
+		<edge directed="true" from="27" to="63"/>
+		<edge directed="true" from="34" to="65"/>
+		<edge directed="true" from="35" to="65"/>
+		<edge directed="true" from="35" to="76"/>
+		<edge directed="true" from="38" to="64"/>
+		<edge directed="true" from="38" to="66"/>
+		<edge directed="true" from="40" to="64"/>
+		<edge directed="true" from="42" to="66"/>
+		<edge directed="true" from="44" to="64"/>
+		<edge directed="true" from="44" to="66"/>
+		<edge directed="true" from="45" to="66"/>
+		<edge directed="true" from="47" to="66"/>
+		<edge directed="true" from="48" to="67"/>
+		<edge directed="true" from="48" to="76"/>
+		<edge directed="true" from="49" to="68"/>
+		<edge directed="true" from="49" to="69"/>
+		<edge directed="true" from="49" to="75"/>
+		<edge directed="true" from="54" to="70"/>
+		<edge directed="true" from="55" to="71"/>
+		<edge directed="true" from="56" to="72"/>
+		<edge directed="true" from="59" to="73"/>
+		<edge directed="true" from="61" to="74"/>
+		<edge directed="true" from="68" to="75"/>
+		<edge directed="true" from="70" to="76"/>
+		<edge directed="true" from="71" to="76"/>
+		<edge directed="true" from="72" to="76"/>
+		<edge directed="true" from="74" to="77"/>
+		<edge directed="true" from="78" to="1"/>
+		<edge directed="true" from="78" to="2"/>
+		<edge directed="true" from="79" to="3"/>
+		<edge directed="true" from="79" to="4"/>
+		<edge directed="true" from="80" to="5"/>
+		<edge directed="true" from="80" to="6"/>
+		<edge directed="true" from="80" to="7"/>
+		<edge directed="true" from="81" to="8"/>
+		<edge directed="true" from="82" to="8"/>
+		<edge directed="true" from="82" to="9"/>
+		<edge directed="true" from="82" to="10"/>
+		<edge directed="true" from="83" to="11"/>
+		<edge directed="true" from="83" to="12"/>
+		<edge directed="true" from="83" to="13"/>
+		<edge directed="true" from="84" to="14"/>
+		<edge directed="true" from="85" to="15"/>
+		<edge directed="true" from="86" to="16"/>
+		<edge directed="true" from="86" to="17"/>
+		<edge directed="true" from="87" to="18"/>
+	</edges>
+</network>

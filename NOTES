@@ -1,0 +1,234 @@
+=============
+GENERAL NOTES
+=============
+
+
+monitors and edges...
+
+how to collapse multiple edges visually?
+
+  * multi-edge monitors: single monitor for all edges between two particular nodes.
+    - group by type?
+    - can single- and multi-edge monitors share a common interface?  Or even be the same class?
+    - is there a multi-node monitor?  Is that the same thing as a network monitor?
+
+  * companion monitor awareness: use current methods to have edge monitors find other edge monitors, and communicate to them when one of them will take care of the drawing operations for all of them.
+    - how to specify the conditions to do this?
+    - too confusing for too few benifits?
+    - confusing because an edge monitor can sometimes visually represent multiple edges, even tho it is really only tied to one edge.  seems hackish and inconsistent.
+    
+  * edge monitor grouper: group a set of edge monitors that are between the same nodes and operate on the edges via that object.
+    - so sometimes operate on monitor-groups and sometimes on monitors-proper?  this also sounds confusing.
+    
+
+
+trashcan / undo:
+
+  how might one make it possible to delete nodes or edges, and then be able to undo the action?
+  same question for the more general idea of changing the properies of nodes and edges?
+  would this only be at the layer of Netitor, and it is sufficient that when one "undos", any monitor are re-created?  Or should monitors of deleted objects hang around?
+  do monitors keep any data on them ever worth saving for undo purposes?
+
+
+-------------------
+About Octree class:
+-------------------
+
+each octant also points laterally, to the smallest area of space equal to or larger than it on each side.
+i.e. it points to either one of its sibling octants, or its parent's neighbor's octants, or failing those, one of its parent's neighbors.
+
+node updates can happen by letting the node move laterally until it finds the space it should be in.
+
+lateral pointer updates happen... how?  The changed quadrant needs to follow its lateral pointers to neighboring quadrants and recursively update the relevant lateral pointers.
+
+
+------------------------------------
+About Network / Node / Edge classes:
+------------------------------------
+
+* nodes and edges are sepereate objects.
+
+* nodes refer to edges that connect to them, and edges refer to nodes that they connect to.
+
+* nodes may accept both directed and undirected edges simulateously (i.e. mixed graph), and pairs of nodes may have more than one edge between them (i.e. mixed multigraph).
+
+* network is a container class for nodes.
+
+**WAIT! Maybe a network is a container of both nodes *and* edges, and in such a sense can then include only a subset of all the edges between nodes, e.g. only the relation "met" between people and not the more specific relation "colleagues".
+***
+
+** Perhaps a network can have interface elements that a node has, in that one can think of a network with in and out edges, i.e. think about conceptually collapsing the network down to a single node.
+
+* a network does not own the contained nodes.  i.e., deleting a network will not delete the contained nodes.
+
+* nodes can belong to any number of networks, including none.
+
+* directed and undirected edge classes are children of a general edge class, which does very little except unify the two types of edges as siblings.
+*** not anymore.  I may still split them to ensure certain member functions are non-virtual, however the parent edge class would be an undirected edge.
+
+
+Logical Node  <-->  Physical Node
+What is the connection?
+A Logical Node + <Environment> compiles into a Physical Node instance.
+
+
+More event based.
+Can add event functoids to the Network that can be called when something happens, e.g. node addition?
+Or can it be done via virtual functions and derivation?
+---
+
+A NetVR::Network could add to / modify the attributes of nodes and edges contained within it.
+These attributes could be stored in an instance of a NodeStyle and an EdgeStyle.
+
+*NodeStyle and EdgeStyle objects can be fed an instance of the Node/Edge class to which it corresponds, and output properies based on the properties of the Node/Edge (e.g., the older the Person's age, the cooler the color given).
+
+A PhysicalNetwork could actually produce position information for its contained nodes and edges.
+As such, it would be the thing that makes PhysicalNodes and PhysicalEdges.
+
+How do attributes get combined and assigned?
+  e.g. size, shape, color, texture map, etc, etc
+A priority list?
+A logically seperated list of encapsulated OpenGL commands?
+Logically seperated meaning... hmmm...
+
+A PhysicalNode and a PhysicalEdge each is a "container" of functions / properties from which to construct the visual representation of a particular Node or Edge.
+
+How do we track the "selection" of nodes?  More generally, how does the PhysicalNetwork track changes to the state of its containing nodes?  Already we have events for the adding of edges, and an action for adding a node.
+
+AttributedNetworks are derived from logical Networks, while PhysicalNetworks are derived from NetworkEventHandler...?
+Why?
+
+This is all stupid.  How the hell can a PhysicalNetwork not be a network?  It has to know how its PhysicalEdges and PhysicalNodes are arranged, right?
+So in what way can one separate a physical network from the logical network it is representing?
+Or must we have them be one and the same?
+Or should logical networks / nodes / edges have a pointer for a map of "context data"?
+The underlying concept here is... what?  Nodes and whatnot can have properties dependent on a context outside of network context?
+
+So would they have *both* context data *and* event listeners...?  Holy crap.  Why?  What is being served here that shouldn't just be done with derived classes?
+
+I suppose the point is that the same logical network can have multiple views (i.e. contexts) and can drive things external to logical network functions (e.g. drawings objects).
+
+If one thinks in this new way, how would the attributes be stored?  They still *seem* tied to the logical network, and not the physical network.  Does thinking about that provide additional insight into the greatness or folly of this new proposal?
+
+**Couldn't this "context" simply be the network(s) to which the nodes and edges belong?  So each node and edge could have general network-dependent data.  That way the PhysicalNetwork could still be a network, and for a given PhysicalNetwork, the nodes and edges have data dependent on that network: the location in VR space.
+
+
+Network viewer
+Node viewer
+Edge viewer
+
+A network viewer is attached to a network.  Then when a node is added to this network, the network viewer is asked to produce a node viewer to be attached to the node.  The same goes for newly arriving edges.  These viewers are then notified of anything that happens to the thing they are viewing.  E.g. a node viewer will be told when edges are attached or detached, or when the node's properties change.  If a node or edge leaves the network, the corresponding viewer is also removed and given back to the network viewer.
+
+What is responsible for drawing a virtual node or edge?  Would it be directly on node viewers and edge viewers?
+
+In NetVR land, Network "lens" (e.g. how to translate a node property to a specific color) would be objects that point to a particular network, and are reffered to by a particular Network Viewer.  Node Viewers and Edge Viewers of that Network Viewer could then use Network Lenses that correspond to the node or edge to which they correspond to determine how to translate the logical properties to VR properties.
+
+
+For nodes
+  states: select, [network], hover?
+  parts: surface (color / texture), shape, label, other?
+
+For undirected edges
+  states: select-interior, select-incident, [network]-interior, [network]-incident, hover?
+  parts: surface (color / texture), shape, label, other?
+
+
+Node/Edge gets the list of styles that apply to it.
+It goes through the list and asks for an Action to fill in any slot that is still empty.
+
+Action used is three stages:
+  1. Instantiate
+  2. Bind to Node/Edge
+  3. Execute
+
+
+------
+IDEAS:
+------
+
+* Edges / Nodes only write IDs in XML attributes if are supplied with a "local context" (i.e. a network) from which it can derive how its fits in with the whole.
+
+* Networks contain mappings of node pointers to node IDs?  Generated lazily (i.e. when requested)?  Or perhaps each Node contains a list of the networks to which it belongs plus its ID on that network..?  Some combination?
+
+* unsigned Node::getLocalId(Network&)  ?
+
+** No.  Ids are purely an artifact of saving and loading.  Therefore, they should only be created and/or used when doing one of those things.
+
+
+Use factory function objects to create PropertyObjects via a map of class names to factory.  This mapping can be stored in a static member of PropertyObject that derived classes can access when recreating objects from XML.
+
+Should the PropertyObjectXMLParser handle the creation of the new object based on the element name?  The creation function could include a reference to the container object that the PropertyObject is destined for.
+
+That wouldn't work well for simple types that don't need to be full blown PropertyObjects.
+
+Actually, perhaps each PropertyObject should have its own mapping, since the names seem to refer to the *names* of properties, not *types*.
+
+
+PropertyObject is for receiving / transmitting properties, while PropertyAccessor is for receiving / transmitting the character data.
+
+
+
+Processes
+
+Saving
+
+go to the network instance.  it outputs its own xml and decends to its contained nodes.
+
+attributes added by containing object, elements added by object itself...?
+
+contain versus reference
+
+pointer ID generation
+
+
+XML I/O Stream!!!!
+
+Convert event-based SAX input to a stream type input!
+
+Convert elements to a stream of types and values, i.e., a linked list of XMLTokens
+
+	<id>			<text>
+	ELEMENT_START	element's name
+	ATTRIBUTE_NAME	attribute's name
+	ATTRIBUTE_VALUE	attribute's value
+	CDATA			character data
+	ELEMENT_END		element's name
+	
+actually, can use more robust tokens.
+
+===================
+
+Some kind of object<->file conversion tools?  E.g., dealing w/ pointers.
+
+Maybe just something as part of utilities?  Or is a base class of some kind useful?
+
+Is the object<->file conversion on the objects themselves, or on helper objects?
+
+Pointer output: a repository for a pointer<->id mapping that can be consulted later.  Feed it the pointers and it remembers them and assigns an id.
+
+Pointer input: again, just a repository..?
+
+What advantages could something bring to simply passing a map object around?
+
+
+Oh!  How about a toString() function specifically for pointers where the pointer is looked up in a mapping, and if not found it is inserted with a unique sequential id which is returned, and if it is found then the previously assigned id is returned.
+There would also be a register function when one doesn't need to actually convert the pointer to an id.
+
+hmm...
+
+Could fromString operate similarly?
+
+
+**********
+OBSOLETE
+-----------------------
+About AttributedObject:
+-----------------------
+
+* The concept here is for a class that allows for the general conversion to / from strings of attributes of an object for such purposes as e.g. saving to a file.
+
+* The AttributedObject class is a base class that is derived by Nodes and Edges.
+
+* When writing / reading XML documents, the AttributedObject protocols (getAttributesAsStrings, setAttributeFromString) are used to read / write attributes from / to the corresponding objects.
+
+* Currently this is done via implementing the protocol methods for derived classes and doing an explicit check against a string naming an attribute.  Could this be done more implicitly and automatically using a method of registering attributes and passing / storing pointers to accessor methods?

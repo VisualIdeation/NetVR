@@ -1,0 +1,158 @@
+<network>
+	<nodes>
+		<student id="1">
+			<first>Adrian</first>
+			<last>Bell</last>
+			<dept>GECL</dept>
+		</student>
+		<student id="2">
+			<first>Christian</first>
+			<last>Bird</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="3">
+			<first>Irvin</first>
+			<last>Ching</last>
+			<dept>GECE</dept>
+		</student>
+		<student id="4">
+			<first>Ananya</first>
+			<last>Das</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="5">
+			<first>Peter</first>
+			<last>Fonda</last>
+			<dept>GEMA</dept>
+		</student>
+		<student id="6">
+			<first>Adam</first>
+			<last>Henry</last>
+			<dept>GTTP</dept>
+		</student>
+		<student id="7">
+			<first>Christopher</first>
+			<last>Muelder</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="8">
+			<first>Michael</first>
+			<last>Ogawa</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="9">
+			<first>Ryan</first>
+			<last>Rapetti</last>
+			<dept>GEMA</dept>
+		</student>
+		<student id="10">
+			<first>Dana</first>
+			<last>Rowan</last>
+			<dept>GECL</dept>
+		</student>
+		<student id="11">
+			<first>Zeqian</first>
+			<last>Shen</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="12">
+			<first>Julia</first>
+			<last>Silvis</last>
+			<dept>GTTP</dept>
+		</student>
+		<student id="13">
+			<first>Hong-Yue</first>
+			<last>Tang</last>
+			<dept>GEMA</dept>
+		</student>
+		<student id="14">
+			<first>Anna</first>
+			<last>Tikhonova</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="15">
+			<first>Jordan</first>
+			<last>VanAalsburg</last>
+			<dept>GPHY</dept>
+		</student>
+		<student id="16">
+			<first>Haoran</first>
+			<last>Wen</last>
+			<dept>GEMA</dept>
+		</student>
+		<student id="17">
+			<first>Phillip</first>
+			<last>deMello</last>
+			<dept>GEMA</dept>
+		</student>
+		<student id="18">
+			<first>Yucheng</first>
+			<last>Chau</last>
+			<dept>-</dept>
+		</student>
+		<student id="19">
+			<first>Hua</first>
+			<last>Yu</last>
+			<dept>-</dept>
+		</student>
+		<student id="20">
+			<first>Braden</first>
+			<last>Pellett</last>
+			<dept>-</dept>
+		</student>
+		<student id="21">
+			<first>Ram</first>
+			<last>Keralapura</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="22">
+			<first>Debashis</first>
+			<last>Paul</last>
+			<dept>Stats</dept>
+		</student>
+		<student id="23">
+			<first>Jie</first>
+			<last>Peng</last>
+			<dept>Stats</dept>
+		</student>
+		<student id="24">
+			<first>Dhurv</first>
+			<last>Gupta</last>
+			<dept>GCSI</dept>
+		</student>
+		<student id="25">
+			<first>Phillip</first>
+			<last>Pellette</last>
+			<dept>GEMA</dept>
+		</student>
+	</nodes>
+	<edges>
+		<met directed="false" from="1" to="2"/>
+		<met directed="false" from="1" to="10"/>
+		<met directed="false" from="2" to="4"/>
+		<met directed="false" from="2" to="8"/>
+		<met directed="false" from="2" to="11"/>
+		<met directed="false" from="3" to="16"/>
+		<met directed="false" from="4" to="7"/>
+		<met directed="false" from="4" to="8"/>
+		<met directed="false" from="4" to="14"/>
+		<met directed="false" from="4" to="19"/>
+		<met directed="false" from="4" to="24"/>
+		<met directed="false" from="5" to="9"/>
+		<met directed="false" from="6" to="10"/>
+		<met directed="false" from="6" to="12"/>
+		<met directed="false" from="7" to="2"/>
+		<met directed="false" from="7" to="8"/>
+		<met directed="false" from="7" to="11"/>
+		<met directed="false" from="8" to="14"/>
+		<met directed="false" from="8" to="11"/>
+		<met directed="false" from="10" to="12"/>
+		<met directed="false" from="11" to="14"/>
+		<met directed="false" from="15" to="20"/>
+		<met directed="false" from="16" to="18"/>
+		<met directed="false" from="18" to="3"/>
+		<met directed="false" from="19" to="16"/>
+		<met directed="false" from="19" to="24"/>
+		<met directed="false" from="22" to="23"/>
+	</edges>
+</network>

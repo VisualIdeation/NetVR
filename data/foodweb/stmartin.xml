@@ -1,0 +1,275 @@
+<network>
+	<nodes>
+		<node id="0"/>
+		<node id="1"/>
+		<node id="2"/>
+		<node id="3"/>
+		<node id="4"/>
+		<node id="5"/>
+		<node id="6"/>
+		<node id="7"/>
+		<node id="8"/>
+		<node id="9"/>
+		<node id="10"/>
+		<node id="11"/>
+		<node id="12"/>
+		<node id="13"/>
+		<node id="14"/>
+		<node id="15"/>
+		<node id="16"/>
+		<node id="17"/>
+		<node id="18"/>
+		<node id="19"/>
+		<node id="20"/>
+		<node id="21"/>
+		<node id="22"/>
+		<node id="23"/>
+		<node id="24"/>
+		<node id="25"/>
+		<node id="26"/>
+		<node id="27"/>
+		<node id="28"/>
+		<node id="29"/>
+		<node id="30"/>
+		<node id="31"/>
+		<node id="32"/>
+		<node id="33"/>
+		<node id="34"/>
+		<node id="35"/>
+		<node id="36"/>
+		<node id="37"/>
+		<node id="38"/>
+		<node id="39"/>
+		<node id="40"/>
+		<node id="41"/>
+		<node id="42"/>
+		<node id="43"/>
+		<node id="44"/>
+	</nodes>
+	<edges>
+		<edge directed="true" from="0" to="39"/>
+		<edge directed="true" from="0" to="40"/>
+		<edge directed="true" from="0" to="41"/>
+		<edge directed="true" from="0" to="42"/>
+		<edge directed="true" from="0" to="43"/>
+		<edge directed="true" from="0" to="44"/>
+		<edge directed="true" from="4" to="3"/>
+		<edge directed="true" from="5" to="1"/>
+		<edge directed="true" from="7" to="1"/>
+		<edge directed="true" from="8" to="1"/>
+		<edge directed="true" from="9" to="1"/>
+		<edge directed="true" from="10" to="1"/>
+		<edge directed="true" from="14" to="1"/>
+		<edge directed="true" from="14" to="3"/>
+		<edge directed="true" from="14" to="11"/>
+		<edge directed="true" from="14" to="12"/>
+		<edge directed="true" from="14" to="13"/>
+		<edge directed="true" from="15" to="1"/>
+		<edge directed="true" from="15" to="3"/>
+		<edge directed="true" from="15" to="11"/>
+		<edge directed="true" from="15" to="14"/>
+		<edge directed="true" from="16" to="14"/>
+		<edge directed="true" from="16" to="15"/>
+		<edge directed="true" from="16" to="17"/>
+		<edge directed="true" from="16" to="21"/>
+		<edge directed="true" from="16" to="22"/>
+		<edge directed="true" from="16" to="23"/>
+		<edge directed="true" from="16" to="24"/>
+		<edge directed="true" from="16" to="29"/>
+		<edge directed="true" from="16" to="31"/>
+		<edge directed="true" from="16" to="35"/>
+		<edge directed="true" from="17" to="1"/>
+		<edge directed="true" from="17" to="2"/>
+		<edge directed="true" from="17" to="3"/>
+		<edge directed="true" from="17" to="4"/>
+		<edge directed="true" from="17" to="6"/>
+		<edge directed="true" from="17" to="8"/>
+		<edge directed="true" from="17" to="14"/>
+		<edge directed="true" from="17" to="15"/>
+		<edge directed="true" from="18" to="7"/>
+		<edge directed="true" from="18" to="14"/>
+		<edge directed="true" from="18" to="15"/>
+		<edge directed="true" from="18" to="17"/>
+		<edge directed="true" from="18" to="22"/>
+		<edge directed="true" from="18" to="35"/>
+		<edge directed="true" from="19" to="3"/>
+		<edge directed="true" from="19" to="4"/>
+		<edge directed="true" from="19" to="5"/>
+		<edge directed="true" from="19" to="6"/>
+		<edge directed="true" from="19" to="10"/>
+		<edge directed="true" from="19" to="14"/>
+		<edge directed="true" from="19" to="15"/>
+		<edge directed="true" from="19" to="30"/>
+		<edge directed="true" from="20" to="4"/>
+		<edge directed="true" from="20" to="6"/>
+		<edge directed="true" from="20" to="8"/>
+		<edge directed="true" from="20" to="9"/>
+		<edge directed="true" from="20" to="10"/>
+		<edge directed="true" from="20" to="14"/>
+		<edge directed="true" from="20" to="15"/>
+		<edge directed="true" from="20" to="17"/>
+		<edge directed="true" from="20" to="19"/>
+		<edge directed="true" from="20" to="25"/>
+		<edge directed="true" from="20" to="30"/>
+		<edge directed="true" from="21" to="10"/>
+		<edge directed="true" from="21" to="14"/>
+		<edge directed="true" from="21" to="15"/>
+		<edge directed="true" from="21" to="19"/>
+		<edge directed="true" from="21" to="30"/>
+		<edge directed="true" from="22" to="1"/>
+		<edge directed="true" from="22" to="3"/>
+		<edge directed="true" from="22" to="4"/>
+		<edge directed="true" from="22" to="5"/>
+		<edge directed="true" from="22" to="6"/>
+		<edge directed="true" from="22" to="9"/>
+		<edge directed="true" from="22" to="14"/>
+		<edge directed="true" from="22" to="15"/>
+		<edge directed="true" from="23" to="7"/>
+		<edge directed="true" from="23" to="14"/>
+		<edge directed="true" from="23" to="15"/>
+		<edge directed="true" from="23" to="17"/>
+		<edge directed="true" from="23" to="22"/>
+		<edge directed="true" from="23" to="35"/>
+		<edge directed="true" from="24" to="3"/>
+		<edge directed="true" from="24" to="6"/>
+		<edge directed="true" from="24" to="7"/>
+		<edge directed="true" from="24" to="9"/>
+		<edge directed="true" from="24" to="14"/>
+		<edge directed="true" from="24" to="15"/>
+		<edge directed="true" from="24" to="17"/>
+		<edge directed="true" from="24" to="31"/>
+		<edge directed="true" from="24" to="35"/>
+		<edge directed="true" from="25" to="2"/>
+		<edge directed="true" from="25" to="3"/>
+		<edge directed="true" from="25" to="4"/>
+		<edge directed="true" from="25" to="6"/>
+		<edge directed="true" from="25" to="9"/>
+		<edge directed="true" from="25" to="10"/>
+		<edge directed="true" from="25" to="14"/>
+		<edge directed="true" from="25" to="15"/>
+		<edge directed="true" from="25" to="19"/>
+		<edge directed="true" from="25" to="30"/>
+		<edge directed="true" from="26" to="3"/>
+		<edge directed="true" from="26" to="4"/>
+		<edge directed="true" from="26" to="5"/>
+		<edge directed="true" from="26" to="6"/>
+		<edge directed="true" from="26" to="10"/>
+		<edge directed="true" from="26" to="14"/>
+		<edge directed="true" from="26" to="15"/>
+		<edge directed="true" from="26" to="19"/>
+		<edge directed="true" from="26" to="30"/>
+		<edge directed="true" from="27" to="3"/>
+		<edge directed="true" from="27" to="4"/>
+		<edge directed="true" from="27" to="6"/>
+		<edge directed="true" from="27" to="8"/>
+		<edge directed="true" from="27" to="10"/>
+		<edge directed="true" from="27" to="14"/>
+		<edge directed="true" from="27" to="15"/>
+		<edge directed="true" from="27" to="19"/>
+		<edge directed="true" from="27" to="25"/>
+		<edge directed="true" from="27" to="30"/>
+		<edge directed="true" from="28" to="3"/>
+		<edge directed="true" from="28" to="4"/>
+		<edge directed="true" from="28" to="6"/>
+		<edge directed="true" from="28" to="9"/>
+		<edge directed="true" from="28" to="10"/>
+		<edge directed="true" from="28" to="14"/>
+		<edge directed="true" from="28" to="15"/>
+		<edge directed="true" from="28" to="19"/>
+		<edge directed="true" from="28" to="30"/>
+		<edge directed="true" from="29" to="7"/>
+		<edge directed="true" from="29" to="14"/>
+		<edge directed="true" from="29" to="15"/>
+		<edge directed="true" from="29" to="17"/>
+		<edge directed="true" from="29" to="22"/>
+		<edge directed="true" from="29" to="35"/>
+		<edge directed="true" from="30" to="4"/>
+		<edge directed="true" from="30" to="5"/>
+		<edge directed="true" from="30" to="6"/>
+		<edge directed="true" from="30" to="9"/>
+		<edge directed="true" from="31" to="8"/>
+		<edge directed="true" from="31" to="14"/>
+		<edge directed="true" from="31" to="15"/>
+		<edge directed="true" from="31" to="35"/>
+		<edge directed="true" from="32" to="14"/>
+		<edge directed="true" from="33" to="2"/>
+		<edge directed="true" from="33" to="3"/>
+		<edge directed="true" from="33" to="14"/>
+		<edge directed="true" from="33" to="15"/>
+		<edge directed="true" from="34" to="14"/>
+		<edge directed="true" from="34" to="15"/>
+		<edge directed="true" from="34" to="17"/>
+		<edge directed="true" from="34" to="21"/>
+		<edge directed="true" from="34" to="22"/>
+		<edge directed="true" from="34" to="23"/>
+		<edge directed="true" from="34" to="24"/>
+		<edge directed="true" from="34" to="29"/>
+		<edge directed="true" from="34" to="31"/>
+		<edge directed="true" from="34" to="35"/>
+		<edge directed="true" from="35" to="1"/>
+		<edge directed="true" from="35" to="2"/>
+		<edge directed="true" from="35" to="3"/>
+		<edge directed="true" from="35" to="14"/>
+		<edge directed="true" from="35" to="15"/>
+		<edge directed="true" from="36" to="1"/>
+		<edge directed="true" from="36" to="3"/>
+		<edge directed="true" from="36" to="14"/>
+		<edge directed="true" from="37" to="7"/>
+		<edge directed="true" from="37" to="14"/>
+		<edge directed="true" from="37" to="15"/>
+		<edge directed="true" from="37" to="17"/>
+		<edge directed="true" from="37" to="22"/>
+		<edge directed="true" from="37" to="35"/>
+		<edge directed="true" from="38" to="16"/>
+		<edge directed="true" from="38" to="21"/>
+		<edge directed="true" from="38" to="22"/>
+		<edge directed="true" from="38" to="24"/>
+		<edge directed="true" from="38" to="34"/>
+		<edge directed="true" from="39" to="2"/>
+		<edge directed="true" from="39" to="3"/>
+		<edge directed="true" from="39" to="4"/>
+		<edge directed="true" from="39" to="5"/>
+		<edge directed="true" from="39" to="6"/>
+		<edge directed="true" from="39" to="7"/>
+		<edge directed="true" from="39" to="8"/>
+		<edge directed="true" from="39" to="24"/>
+		<edge directed="true" from="39" to="28"/>
+		<edge directed="true" from="39" to="38"/>
+		<edge directed="true" from="40" to="2"/>
+		<edge directed="true" from="40" to="9"/>
+		<edge directed="true" from="40" to="10"/>
+		<edge directed="true" from="40" to="21"/>
+		<edge directed="true" from="40" to="22"/>
+		<edge directed="true" from="40" to="24"/>
+		<edge directed="true" from="40" to="25"/>
+		<edge directed="true" from="40" to="26"/>
+		<edge directed="true" from="40" to="28"/>
+		<edge directed="true" from="41" to="2"/>
+		<edge directed="true" from="41" to="17"/>
+		<edge directed="true" from="41" to="19"/>
+		<edge directed="true" from="41" to="20"/>
+		<edge directed="true" from="41" to="21"/>
+		<edge directed="true" from="41" to="22"/>
+		<edge directed="true" from="41" to="25"/>
+		<edge directed="true" from="41" to="27"/>
+		<edge directed="true" from="41" to="29"/>
+		<edge directed="true" from="41" to="33"/>
+		<edge directed="true" from="41" to="38"/>
+		<edge directed="true" from="42" to="18"/>
+		<edge directed="true" from="42" to="22"/>
+		<edge directed="true" from="42" to="23"/>
+		<edge directed="true" from="43" to="23"/>
+		<edge directed="true" from="43" to="36"/>
+		<edge directed="true" from="44" to="16"/>
+		<edge directed="true" from="44" to="17"/>
+		<edge directed="true" from="44" to="18"/>
+		<edge directed="true" from="44" to="22"/>
+		<edge directed="true" from="44" to="23"/>
+		<edge directed="true" from="44" to="29"/>
+		<edge directed="true" from="44" to="32"/>
+		<edge directed="true" from="44" to="33"/>
+		<edge directed="true" from="44" to="34"/>
+		<edge directed="true" from="44" to="36"/>
+		<edge directed="true" from="44" to="37"/>
+	</edges>
+</network>
